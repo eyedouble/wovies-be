@@ -51,6 +51,8 @@ start ( server ) ->
 
 boot_persistence ( ) ->
     erlstore:boot ( code:priv_dir( woviesbackend ) ++ "/data/db" ),
+    erlstore_persistence:createTable ( domains ),
+    erlstore_persistence:createTable ( users ),
     erlstore_persistence:createTable ( watchlater ).  
 
 initialise ( ) ->
