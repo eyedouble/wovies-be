@@ -1,0 +1,21 @@
+{application, woviesbackend,
+ [{description, "Wovies Backend."},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {mod, { woviesbackend_app, []}},
+  {applications,
+   [
+    kernel
+    ,stdlib   
+    ,ranch   
+    ,cowboy
+    ,erlstore
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.
+
